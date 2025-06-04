@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><title>Employee Dashboard</title></head>
+<body>
+<h2>Welcome Employee</h2>
+<form th:action="@{/employee/mark}" method="post">
+    <input type="hidden" name="status" value="Present"/>
+    <button type="submit">Mark Present</button>
+</form>
+</body>
+</html>
